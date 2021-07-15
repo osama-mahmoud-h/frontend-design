@@ -194,7 +194,7 @@ margin-bottom: 50px;
 
 /*start desgin*/
 .desgin{
-    background: url('design-features.jpg');
+    background: url('imgs/design-features.jpg');
     height: 600px;
     background-size: cover;
     overflow: hidden;
