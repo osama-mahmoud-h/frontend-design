@@ -1,0 +1,800 @@
+/*global*/
+*{
+    box-sizing: border-box;
+    color: black;
+    padding:0;
+    margin: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+/*end globals*/
+
+/*start framework*/
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.clearfix{
+    clear: both;
+}
+/*end framework*/
+
+/*start header*/
+.header{
+    height: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.header .logo{
+    float: left;
+    width: 50%;
+    height: 128px;
+    padding: 30px;
+}
+.header .logo img{
+    height:100%;
+    border-radius: 10px;
+}
+.header .nav{
+    float:left ;
+    width:50%;
+    padding: 20px;
+    margin-top:20px;
+    overflow: hidden;
+  
+}
+.header .nav .toggle-menu{
+display: none;
+}
+
+.header .nav ul{
+    float: left;
+    width: 80%;
+    padding :10px;
+}
+.header .nav .form{
+    float:left;
+    width: 20%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-left: 2px solid #FFF;
+}
+.nav .form i{
+    padding-left: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav ul li ,.form{
+    display: inline-block;
+}
+.header ul li a{
+    padding: 30px 8px;
+    color: #FFF;
+}
+.nav ul li a.active{
+    border-bottom: 2px solid #16a4cd;
+}
+.header ul li a:hover{
+    color:#16a4cd;
+    border-bottom: 2px solid #16a4cd;
+}
+.header .container{
+position: relative;
+}
+.header .container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.637);
+    top: 97px;
+    right:0;
+
+
+}
+
+/*end header*/
+
+/*start landing*/
+.landing{
+    height: 650px;
+    background: url("../imgs/landing.jpg");
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+/*end landing*/
+/*start services*/
+.services {
+height: 800px;
+margin-bottom: 50px;
+}
+.services .head{
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    width: 50%;
+    margin: 0 auto;
+}
+.services .head h2{
+    position: relative;
+    padding :20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+}
+.services .head h2::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height:2px;
+    left:219px;
+    top:66px;
+    background-color: black;
+}
+.services .head h2::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height:10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 59px;
+    right:264px;
+    background-color: #FFF;
+
+}
+.services .head p{
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1cm;
+    font-size: 20px;
+}
+.services .ser-box{
+    float :left;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.services .ser-box .icon{
+    float: left;
+    width: 20%;
+}
+.services .ser-box .info{
+    float: left;
+    width: 80%;
+    padding-bottom: 50px;
+}
+.ser-box .info h3{
+    color:#16a4cd;
+    padding:10px 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.ser-box .info p{
+    line-height: 1cm;
+    color:rgba(0, 0, 0, 0.7)
+}
+/*end services*/
+
+/*start desgin*/
+.desgin{
+    background: url('../imgs/design-features.jpg');
+    height: 600px;
+    background-size: cover;
+    overflow: hidden;
+}
+.desgin .img{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.desgin .img img{
+    position: relative;
+    bottom: -200px;
+}
+.desgin .some-design{
+    float: left;
+    width: 50%;
+    background-color:#0b5670;
+    margin-top: 120px;
+    padding: 50px;
+    color: white;
+}
+.desgin .some-design h3{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.desgin .some-design ul i{
+    margin-right: 15px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+.desgin .some-design ul li{
+    padding:20px;
+    color: #FFF;
+    font-size: 18px;
+}
+/**end desgin*/
+/*start portfolio*/
+.portfolio{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.portfolio h2{
+    padding: 40px;
+    font-size: 25px;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.portfolio h2::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height:2px;
+    left: 196px;
+    top:91px;
+    background-color: black;
+}
+.portfolio h2::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height:10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 85px;
+    right: 248px;
+    background-color: #FFF;
+}
+.portfolio p{
+    width: 500px;
+    margin: 0 auto;
+    line-height: 2;
+    color:rgba(0,0,0,.7);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.portfolio ul{
+    margin-bottom: 40px;
+}
+.portfolio ul li{
+    display:inline-block;
+    padding :10px;
+    font-weight: 300;
+}
+.portfolio ul li.active{
+    color:#fff;
+    background-color:#16a4cd ;
+}
+.portfolio .heading{
+    margin-bottom: 50px;
+}
+.portfolio .img-container{
+    margin-bottom: 80px;
+}
+.portfolio .img-container .img-box{
+    float: left;
+    width: 25%;
+    height: 300px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.portfolio .img-container .img-box img{
+    height: 100%;
+    max-width: 100%;
+}
+.portfolio .img-box:hover img{
+    transition: all 0.3s ease 0;
+}
+.portfolio .img-container .caption{
+   display: none;
+}
+
+.portfolio .caption h4,
+.portfolio .caption p{
+    width: 150px;
+    margin-left: 0;
+    text-align: right;
+}
+.portfolio .caption h4{
+    margin-top:20px;
+}
+.portfolio .caption p{
+    margin-top: -20px;
+    color: #16a4cd;
+}
+.portfolio .img-container .img-box:hover .caption
+{
+    display: block;
+    position: absolute;
+    background-color: #FFF;
+    height: 30%;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+.portfolio .more{
+    background-color: #16a4cd;
+    padding:15px 20px;
+    margin-bottom: 50px;
+}
+/*end protfolio*/
+
+/*start vedio*/
+.vedio{
+    position: relative;
+    overflow: hidden;
+}
+.vedio::before{
+    position:absolute;
+    content: "";
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.vedio .text{
+background-color: #16a5cd70;
+position: absolute;
+top:40%;
+width: 100%;
+text-align: center;
+padding:20px;
+color: #FFF;
+}
+.vedio .text h3{
+padding:20px;
+color: #FFF;
+
+}
+.vedio .text p{
+    padding :20px;
+    margin-bottom: 10px;
+    color: #FFF;
+
+}
+.vedio .text button{
+    padding:10px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #FFF;
+
+    border: none;
+}
+/*end vedio*/
+
+/*start about*/
+.about{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.about .heading h2{
+    padding:40px;
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+   font-size: 30px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+}
+.about .heading p{
+    width: 500px;
+    margin: auto;
+    margin-bottom: 120px;
+    line-height: 2;
+    color:rgba(0, 0, 0, 0.7);
+}
+.about .heading h2::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height:2px;
+    left: 196px;
+    top:100px;
+    background-color: black;
+}
+.about .heading h2::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height:10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 94px;
+    right: 248px;
+    background-color: #FFF;
+}
+.about .heading img{
+    position: relative;
+    bottom: -120px;
+    z-index: -1;
+} 
+.about .status{
+    background:url('../imgs/stats.png');
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+}
+.about .status .container {
+    background-color:#0b5770b4 ;
+    position: absolute;
+    left:100px;
+    top:100px;
+}
+.about .status .box{
+    float: left;
+    width: 25%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.about .box i,
+.about .box h3,
+.about .box p{
+    margin-bottom:20px;
+    color:#FFF;
+    padding-top: 10px;
+}
+.about .box i
+{
+    background-color: #000;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+.about .box h3{
+    font-size: 35px;
+}
+.about .testim{
+    float: left;
+    width: 45%;
+    padding-top: 80px;
+    margin-right: 5%;
+}
+.about .testim h3{
+    margin-bottom: 20px;
+}
+.about .testim>p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color:rgba(0,0,0,0.6);
+}
+.about .skills{
+    float: left;
+    width:45%;
+    padding-top: 80px;
+    margin-left: 5%;
+}
+.about .article{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about .article .text{
+    line-height: 2;
+}
+.about .article .text p{
+    margin-top: 25px;
+   text-align: right;
+   border-bottom: 1px solid gray;
+   padding-bottom: 7px;
+   font-size: 15px;
+   color:gray;
+}
+.about .article .img{
+    float: left;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.about .article .img img {
+    width: 100%;
+    height:100%;
+}
+.about .article .text{
+    float:left;
+    width:70%;
+}
+.about .bullt {
+    margin-top: 20px;
+}
+.about .bullt li{
+    display: inline-block;
+    margin-right:15px;
+    border-radius: 50%;
+    width:15px;
+    height:15px;
+    border:1px solid rgba(0,0,0,.5);
+}
+.about .bullt li.active{
+    background-color: #16a4cd;
+    border: none;
+}
+
+.about .skills>p{
+    padding-top: 35px;
+    padding-bottom: 50px;
+    color:rgba(0,0,0,0.6);
+}
+.about .skills .prog-box{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.about .skills .prog-box>p{
+    text-align: left;
+   margin-bottom:10px;
+}
+
+.about .skills .prog-box .progress{
+    width:100%;
+    height: 30px;
+    background-color:rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.about .skills .prog-box .progress>span{
+    display: block;
+    background-color:#16a4cd;
+    height: 100%;
+    position: relative;
+}
+.about .skills .prog-box .progress>span::after{
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -6px;
+    top: -9px;
+   
+}
+.about .skills .prog-box .progress>span::before{
+    position: absolute;
+    content: attr(data-progress);
+    right: -24px;
+    top: -47px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 4px;
+}
+/*end about*/
+
+/*start racing*/
+.racing{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.racing .heading {
+text-align: center;
+margin-bottom: 100px;
+}
+.racing .heading h2{
+font-size: 40px;
+font-weight: 300;
+padding: 20px;
+margin: 0 auto;
+margin-bottom: 20px;
+width: 500px;
+position: relative;
+}
+.racing .heading h2::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height:2px;
+    left: 196px;
+    top:100px;
+    background-color: black;
+}
+.racing .heading h2::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height:10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 94px;
+    right: 248px;
+    background-color: #FFF;
+}
+.racing .heading p{
+    width: 500px;
+    margin:  0 auto;
+    padding: 20px;
+    line-height: 2;
+    color: rgba(0,0,0,.6);
+}
+.racing .plan{
+   
+     float: left;
+     width: 24%;
+     text-align: center;
+     margin-bottom: 100px;
+     margin-right: 1%;
+}
+.racing .plan h4{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    border-top: 1px solid #16a4cd;
+}
+.racing .plan span{
+    font-size: 70px;
+    position: relative;
+}
+.racing .plan span::before{
+    position: absolute;
+    content:"$";
+    font-size: 24px;
+    left: -30px;
+}
+.racing .plan span::after{
+    position: absolute;
+    content:"/Mo";
+    right: -40px;
+    font-size: 20px;
+    bottom: 8px;
+}
+.racing .plan ul{
+    border-top: 1px solid #16a4cd;
+    margin-top: 60px;
+    border-bottom: 1px solid #16a4cd;
+    margin-bottom: 60px;
+}
+.racing .plan ul li{
+    padding-top: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #16a4cd;
+    width: 60%;
+    margin: 0 auto;
+}
+.racing .plan ul li:last-child{
+    border-bottom: none;
+}
+.racing .plan a{
+    border:1px solid #16a4cd;
+    padding:15px;
+}
+.racing p.contact
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+.racing a.contact
+{
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background-color: #16a4cd;
+    width: 150px;
+    margin: 0 auto;
+    color:#fff;
+
+}
+/*end racing*/
+
+/*start subscribe*/
+.subscribe{
+    height: 300px;
+    padding-top:120px;
+    background: url('../imgs/subscribe.jpg');
+    background-size: cover;
+   
+}
+.subscribe form{
+    border: 1px solid #19c8fa;
+    width: 40%;
+    float:left;
+    height: 50px;
+    position: relative;
+}
+.subscribe form i{
+    margin-left: 15px;
+    color:#fff;
+}
+.subscribe form input{
+    border: none;
+
+}
+.subscribe form input[name="mail"]{
+height:100%;
+margin-left: 20px;
+background: transparent;
+}
+.subscribe form input[placeholder="subscribe"]{
+    background-color: #19c8fa;
+    color:#fff;
+    height: 100%;
+    width: 130px;
+    position: absolute;
+    right:0;
+}
+.subscribe p{
+    width: 55%;
+    float: left;
+    margin-left: 5%;
+    line-height: 1.6;
+    color:#fff;
+}
+/*end subscribe*/
+
+/*start footer*/
+.footer{
+    background:url('../imgs/subscribe.jpg');
+    background-size: cover;
+    text-align: center;
+    height:400px;
+    position: relative;
+    z-index: -2;
+}
+.footer .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.footer .logo{
+    height:80px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.footer img{
+    height:100%;
+    border-radius: 15px;
+}
+.footer .container>p:not(.copyright){
+    padding:10px;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    margin:30px  auto;
+    font-size: 22px;
+    color:#fff;
+}
+
+.footer .social{
+    margin-bottom: 80px;
+}
+.footer .social li{
+  display: inline-block;
+  padding: 7px;
+  
+}
+.footer .social li i{
+    color:#fff;
+    font-size: 20px;
+}
+.footer .copyright{
+    font-size: 15px;
+    padding-bottom: 20px;
+    color:#fff;
+}
+.footer .copyright span{
+    font-size: 20px;
+    color:#19c8fa;
+}
+/*end footer*/
