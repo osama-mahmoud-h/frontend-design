@@ -107,7 +107,7 @@ position: relative;
 /*start landing*/
 .landing{
     height: 650px;
-    background: url("../imgs/landing.jpg");
+    background: url("imgs/landing.jpg");
     background-size: cover;
     position: relative;
 }
@@ -194,7 +194,7 @@ margin-bottom: 50px;
 
 /*start desgin*/
 .desgin{
-    background: url('../imgs/design-features.jpg');
+    background: url(imgs/design-features.jpg');
     height: 600px;
     background-size: cover;
     overflow: hidden;
@@ -431,7 +431,7 @@ color: #FFF;
     z-index: -1;
 } 
 .about .status{
-    background:url('../imgs/stats.png');
+    background:url('imgs/stats.png');
     height: 500px;
     width: 100%;
     position: relative;
@@ -699,7 +699,7 @@ position: relative;
 .subscribe{
     height: 300px;
     padding-top:120px;
-    background: url('../imgs/subscribe.jpg');
+    background: url('imgs/subscribe.jpg');
     background-size: cover;
    
 }
@@ -742,7 +742,7 @@ background: transparent;
 
 /*start footer*/
 .footer{
-    background:url('../imgs/subscribe.jpg');
+    background:url('imgs/subscribe.jpg');
     background-size: cover;
     text-align: center;
     height:400px;
